@@ -1,5 +1,29 @@
-.foto-medusa {
-  width: 300px;      
-  height: auto;       
-  display: block;
+/* Adaptación de imagen y texto en paralelo para pantallas grandes */
+.seccion-transformacion {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.texto-transformacion {
+    flex: 1;
+}
+
+.imagen-transformacion img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px; /* Opcional: da un toque estético */
+}
+
+/* Diseño responsivo para móviles */
+@media (max-width: 768px) {
+    .seccion-transformacion {
+        flex-direction: column;
+    }
+    
+    .imagen-transformacion img {
+        width: 100%;
+        max-width: 100%;
+    }
 }
